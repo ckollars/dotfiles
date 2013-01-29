@@ -1,0 +1,48 @@
+# Christopher Kollars git settings derived from Jerod Santo ( http://github.com/jerodsanto/dotfiles ). 
+
+[user]
+  name = Christopher Kollars
+  email = ckollars@gmail.com
+
+[core]
+  excludesfile = /Users/ckollars/.gitexcludes
+  autocrlf = input
+
+
+[alias]
+  a = add
+  b = branch
+  aa = add --all
+  amend = commit --amend
+  ci = commit
+  co = checkout
+  di = diff
+  dc = diff --cached
+  ff = merge --ff-only
+  lg = log --graph --decorate=full --oneline
+  pom = push origin master
+  st = status
+
+[apply]
+  whitespace = nowarn
+
+[push]
+  default = current
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
