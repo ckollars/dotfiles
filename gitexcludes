@@ -1,2 +1,6 @@
 .DS_Store
+*.DS_Store
 .bin
+
+# Always-ignore sass cache
+.sass-cache/
