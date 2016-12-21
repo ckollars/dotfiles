@@ -19,6 +19,7 @@ brew cask install flux
 # dev
 brew cask install iterm2
 brew cask install sublime-text
+brew cask install sourcetree
 brew cask install imagealpha
 brew cask install imageoptim
 
