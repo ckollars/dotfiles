@@ -1,57 +1,49 @@
-# Christopher Kollars git settings derived from Jerod Santo ( http://github.com/jerodsanto/dotfiles ). 
-
-[user]
-  name = Christopher Kollars
-  email = ckollars@gmail.com
+[alias]
+	b = branch
+    	aa = add --all
+	c = commit
+	ca = commit -am
+ 	s = status
+ 	amend = commit --amend
+ 	co = checkout
+ 	df = diff --color --color-words --abbrev
+ 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    
+ 	# Show the diff between the latest commit and the current state
+ 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
 [core]
-  # Use custom `.gitignore` and `.gitattributes`
+ 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 
-[alias]
-    # Basic commands
-    a = add
-    b = branch
-    aa = add --all
-    ci = commit
-    amend = commit --amend
-    co = checkout
-    
-    # View the current working tree status using the short format
-    s = status -s
-    
-    # Switch to a branch, creating it if necessary
-    
-    # Show verbose output about tags, branches or remotes
-    tags = tag -l
-    branches = branch -a
-    remotes = remote -vgo = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
-
-  
 [apply]
   whitespace = fix
 
 [push]
   default = current
 
+# so much color
 [color]
-  branch = auto
-  diff = auto
-  status = auto
-  
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
-  
+	ui = always
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
-  
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
+
