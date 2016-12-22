@@ -22,6 +22,7 @@ brew cask install sublime-text
 brew cask install sourcetree
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install sequel-pro
 
 # browsers
 brew cask install google-chrome
