@@ -17,6 +17,7 @@ brew cask install 1password
 brew cask install flux
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+brew cask install the-unarchiver
 
 # dev
 brew cask install iterm2
