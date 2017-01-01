@@ -15,6 +15,8 @@ brew cask install spectacle
 brew cask install dropbox
 brew cask install 1password
 brew cask install flux
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
 
 # dev
 brew cask install iterm2
