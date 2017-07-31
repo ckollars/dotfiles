@@ -16,6 +16,7 @@
  	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+	editor = subl -n -w
 
 [apply]
   whitespace = fix
