@@ -26,6 +26,7 @@ brew cask install sourcetree
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install sequel-pro
+brew cask install slack
 
 # browsers
 brew cask install google-chrome
