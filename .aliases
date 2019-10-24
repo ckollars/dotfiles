@@ -41,3 +41,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # npm clean and install
 alias npmplease="rm -rf node_modules/ && rm -f package-lock.json && npm install"
+
+# List git branches by last updated
+alias branches="git for-each-ref --count=15 --sort=-committerdate refs/heads/ --format='%(color:blue)%(committerdate:relative): %(color:green)%(refname:short)'"
+
