@@ -4,20 +4,11 @@
 # to maintain cask ....
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
-
 # Install native apps
 
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-
 # daily
-brew cask install spectacle
-brew cask install dropbox
-brew cask install 1password
-brew cask install flux
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install the-unarchiver
+brew install --cask dropbox
+brew install --cask 1password
 
 # dev
 brew cask install iterm2
