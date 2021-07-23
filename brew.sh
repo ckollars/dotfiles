@@ -20,6 +20,7 @@ brew install --cask alfred
 brew install --cask visual-studio-code
 brew install --cask rectangle
 brew install --cask bartender
+brew install --cask slack
 
 # Remove outdated versions from the cellar.
 brew cleanup
